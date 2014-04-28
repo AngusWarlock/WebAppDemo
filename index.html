@@ -2,53 +2,189 @@
 <html>
   <head>
     <title>Bootstrap 101 Template</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="lib/bootstrap.min.css">
 
-    <link rel="stylesheet" href="lib/angular.min.js">
-    <link rel="stylesheet" href="lib/ui-bootstrap-0.10.0.min.js">
+    <script type="text/javascript" src="lib/angular.min.js"></script>
+    <script type="text/javascript" src="lib/ui-bootstrap-0.10.0.min.js"></script>
+    <script type="text/javascript" src="lib/iscroll.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
 
     <![endif]-->
+      <script type="text/javascript">
+
+          var myScroll;
+
+          function loaded () {
+              myScroll = new IScroll('#wrapper', { mouseWheel: true });
+          }
+
+          document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+
+      </script>
+      <style type="text/css">
+          * {
+              -webkit-box-sizing: border-box;
+              -moz-box-sizing: border-box;
+              box-sizing: border-box;
+          }
+
+          html {
+              -ms-touch-action: none;
+          }
+          body {
+              font-size: 12px;
+              font-family: ubuntu, helvetica, arial;
+              overflow: hidden; /* this is important to prevent the whole page to bounce */
+          }
+
+          #wrapper {
+              position: absolute;
+              z-index: 1;
+              top: 45px;
+              bottom: 48px;
+              left: 0;
+              width: 100%;
+              overflow: hidden;
+          }
+          </style>
   </head>
-  <body>
+  <body  onload="loaded()">
 
+    <!-- Static navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
 
-
-        <!-- Static navbar -->
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-            <div class="navbar-header">
-                <div class="container">
-                <div class="row">
-                    <div class="col-xs-3">
-                        1
-                    </div>
-                    <div class="col-xs-6">
-                        <p class="navbar-text">Signed in as Mark Otto</p>
-                    </div>
-                    <div class="col-xs-3">
-                        <button type="button" class="btn btn-primary">Default</button>
-                    </div>
-                </div>
-            </div>
+        <div class="navbar-header">
+            <p class="navbar-text text-center">有本事不要吵</p>
         </div>
 
-            <div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
-                <div class="navbar-header">
-                    <div class="btn-group btn-group-justified">
-                        <a href="#" class="btn btn-default">Left</a>
-                        <a href="#" class="btn btn-default">Middle</a>
-                        <a href="#" class="btn btn-default">Right</a>
-                    </div>
-                </div>
-            </div>
+    </div>
 
-    
-    
-    
+    <div id="wrapper">
+        <div id="scroller">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <span class="badge">1</span>
+                    Cras justo odio
+                </li>
+                <li class="list-group-item">
+                    <span class="badge">2</span>
+                    Cras justo odio
+                </li>
+                <li class="list-group-item">
+                    <span class="badge">3</span>
+                    Cras justo odio
+                </li>
+                <li class="list-group-item">
+                    <span class="badge">4</span>
+                    Cras justo odio
+                </li>
+                <li class="list-group-item">
+                    <span class="badge">5</span>
+                    Cras justo odio
+                </li>
+                <li class="list-group-item">
+                    <span class="badge">6</span>
+                    Cras justo odio
+                </li>
+                <li class="list-group-item">
+                    <span class="badge">7</span>
+                    Cras justo odio
+                </li>
+                <li class="list-group-item">
+                    <span class="badge">8</span>
+                    Cras justo odio
+                </li>
+                <li class="list-group-item">
+                    <span class="badge">9</span>
+                    Cras justo odio
+                </li>
+                <li class="list-group-item">
+                    <span class="badge">10</span>
+                    Cras justo odio
+                </li>
+                <li class="list-group-item">
+                    <span class="badge">11</span>
+                    Cras justo odio
+                </li>
+                <li class="list-group-item">
+                    <span class="badge">12</span>
+                    Cras justo odio
+                </li>
+                <li class="list-group-item">
+                    <span class="badge">13</span>
+                    Cras justo odio
+                </li>
+                <li class="list-group-item">
+                    <span class="badge">14</span>
+                    Cras justo odio
+                </li>
+                <li class="list-group-item">
+                    <span class="badge">15</span>
+                    Cras justo odio
+                </li>
+                <li class="list-group-item">
+                    <span class="badge">16</span>
+                    Cras justo odio
+                </li>
+                <li class="list-group-item">
+                    <span class="badge">17</span>
+                    Cras justo odio
+                </li>
+                <li class="list-group-item">
+                    <span class="badge">18</span>
+                    Cras justo odio
+                </li>
+                <li>Pretty row 16</li>
+                <li>Pretty row 17</li>
+                <li>Pretty row 18</li>
+                <li>Pretty row 19</li>
+                <li>Pretty row 20</li>
+                <li>Pretty row 21</li>
+                <li>Pretty row 22</li>
+                <li>Pretty row 23</li>
+                <li>Pretty row 24</li>
+                <li>Pretty row 25</li>
+                <li>Pretty row 26</li>
+                <li>Pretty row 27</li>
+                <li>Pretty row 28</li>
+                <li>Pretty row 29</li>
+                <li>Pretty row 30</li>
+                <li>Pretty row 31</li>
+                <li>Pretty row 32</li>
+                <li>Pretty row 33</li>
+                <li>Pretty row 34</li>
+                <li>Pretty row 35</li>
+                <li>Pretty row 36</li>
+                <li>Pretty row 37</li>
+                <li>Pretty row 38</li>
+                <li>Pretty row 39</li>
+                <li>Pretty row 40</li>
+                <li>Pretty row 41</li>
+                <li>Pretty row 42</li>
+                <li>Pretty row 43</li>
+                <li>Pretty row 44</li>
+                <li>Pretty row 45</li>
+                <li>Pretty row 46</li>
+                <li>Pretty row 47</li>
+                <li>Pretty row 48</li>
+                <li>Pretty row 49</li>
+                <li>Pretty row 50</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="btn-group btn-group-justified navbar-fixed-bottom text-center">
+        <a href="#" class="btn btn-success">推荐</a>
+        <a href="#" class="btn btn-default">最热</a>
+        <a href="#" class="btn btn-default">最新</a>
+        <a href="#" class="btn btn-default">查找</a>
+        <a href="#" class="btn btn-default">我</a>
+    </div>
   </body>
 </html>
